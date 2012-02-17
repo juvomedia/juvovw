@@ -8,7 +8,8 @@
 using namespace std;
 
 global_data global;
-string version = PACKAGE_VERSION;
+//string version = PACKAGE_VERSION;
+string version = "6.1";
 
 pthread_mutex_t output_lock = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t output_done = PTHREAD_COND_INITIALIZER;

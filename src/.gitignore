@@ -17,3 +17,7 @@ juvovw.h
 juvovw.hh
 myprog
 stamp-h1
+*.o
+active_interactor
+vw
+*~

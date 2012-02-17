@@ -1,0 +1,29 @@
+dnl -- include additional autoconf commands here
+dnl -- do not include AC_OUTPUT, this is called for you
+
+AM_CONDITIONAL(PROFILE, false)
+AM_CONDITIONAL(NITPICK, false)
+AM_CONDITIONAL(PARALLELIZE, false)
+AM_CONDITIONAL(FREEBSD, false)
+
+AC_CHECK_HEADERS([boost/program_options.hpp], [],
+                 [AC_MSG_ERROR([can't find required header])])
+AC_MSG_CHECKING([for boost program options library usability])
+LIBS="$LIBS -lboost_program_options-mt"
+AC_LINK_IFELSE(
+  [AC_LANG_PROGRAM([#include <boost/program_options.hpp>],
+                   [boost::program_options::options_description desc])],
+  [AC_MSG_RESULT([yes])],
+  [AC_MSG_ERROR([can't use boost program options library])])
+
+AC_CHECK_HEADERS([zlib.h], [],
+                 [AC_MSG_ERROR([can't find required header])])
+AC_MSG_CHECKING([for zlib library usability])
+LIBS="$LIBS -lz"
+AC_LINK_IFELSE(
+  [AC_LANG_PROGRAM([#include <zlib.h>],
+                   [zlibVersion();])],
+  [AC_MSG_RESULT([yes])],
+  [AC_MSG_ERROR([can't use zlib library])])
+
+

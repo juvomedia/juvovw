@@ -1,3 +1,6 @@
+Version 2012.07.17
+  * rebuild with updated deps for ubuntu 12.04
+
 Version 2012.02.13a
   * manually specify version for regressor check (6.1)
 

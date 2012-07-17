@@ -20,7 +20,7 @@ FW_PACKAGE_PROVIDES=""
 FW_PACKAGE_REPLACES=""
 FW_PACKAGE_SUGGESTS=""
 
-FW_PACKAGE_BUILD_DEPENDS="libboost1.40-dev | fink (>= 0.0.0), zlib1g-dev"
+FW_PACKAGE_BUILD_DEPENDS="libboost1.40-dev | libboost-program-options1.48-dev | fink (>= 0.0.0), zlib1g-dev"
 FW_PACKAGE_BUILD_CONFLICTS=""
 
 # dupload is used for submitting debian packages to a package archive

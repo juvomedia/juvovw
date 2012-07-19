@@ -3,8 +3,8 @@
 
 FW_PACKAGE_NAME="juvovw"
 FW_PACKAGE_VERSION="2012.07.17"
-FW_PACKAGE_MAINTAINER="Paul Mineiro <paul-fw@mineiro.com>"
-FW_PACKAGE_SHORT_DESCRIPTION="vw for debian lucid."
+FW_PACKAGE_MAINTAINER="photosphere <photosphere@loveit.com>"
+FW_PACKAGE_SHORT_DESCRIPTION="vw for ubuntu precise."
 FW_PACKAGE_DESCRIPTION=`cat README`
 FW_PACKAGE_ARCHITECTURE_DEPENDENT="1"
 
